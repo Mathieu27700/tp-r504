@@ -1,8 +1,8 @@
 import fonctions as f
 
 while True:
-        a=input("Entrez le premier nombre (base entière) : ")
-        b=input("Entrez le second nombre (exposant entier) : ")
+        a=int(input("Entrez le premier nombre (base entière) : "))
+        b=int(input("Entrez le second nombre (exposant entier) : "))
 
         res = f.puissance(a, b)
 
