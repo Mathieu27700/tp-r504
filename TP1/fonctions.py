@@ -21,8 +21,7 @@ def puissance(a, b):
         for _ in range(b):
             result *= a
         return result
-    else:  # b < 0
-        # Pour les puissances négatives, retourner la valeur flottante
+    else:
         result = 1
         for _ in range(-b):
             result *= a
