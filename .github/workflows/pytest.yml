@@ -12,8 +12,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
       - name: Affichage de l'OS
-        run: echo "OS du runner : ${{ runner.os }}"
+        run: |
+          echo "OS du runner : ${{ runner.os }}"
       - name: Affichage du nom de la branche
-        run: echo "Nom de la branche : ${{ github.ref_name }}"
+        run: |
+          echo "Nom de la branche : ${{ github.ref_name }}"
       - name: Run tests
         run: pytest TP1/test.py
