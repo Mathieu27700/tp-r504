@@ -11,5 +11,9 @@ jobs:
         run : |
           python -m pip install --upgrade pip
           pip install pytest
+      - name: affichage des jobs lancé
+        run: echo "Jobs lancés: ${{ github.runner }}"
+      - name: nom de la branche
+        run: echo ${{ github.env }}
       - name: Run tests
         run: pytest TP1/test.py
